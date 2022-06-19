@@ -1,0 +1,147 @@
+[2022-06-16 21:39:28,008 I 114904 114904] core_worker_process.cc:120: Constructing CoreWorkerProcess. pid: 114904
+[2022-06-16 21:39:28,794 I 114904 114904] grpc_server.cc:105: driver server started, listening on port 10017.
+[2022-06-16 21:39:28,797 I 114904 114904] core_worker.cc:175: Initializing worker at address: 10.140.1.24:10017, worker ID 05000000ffffffffffffffffffffffffffffffffffffffffffffffff, raylet 5362b08c08075f2f5bd7b1d3e1df0d75415293f6ede64c2d4cee5e5c
+[2022-06-16 21:39:28,797 I 114904 115956] gcs_server_address_updater.cc:32: GCS Server updater thread id: 140186583295744
+[2022-06-16 21:39:29,303 I 114904 114904] io_service_pool.cc:35: IOServicePool is running with 1 io_service.
+[2022-06-16 21:39:29,323 I 114904 115974] core_worker.cc:494: Event stats:
+
+
+Global stats: 15 total (9 active)
+Queueing time: mean = 117.444 ms, max = 405.343 ms, min = 362.930 us, total = 1.762 s
+Execution time:  mean = 21.956 us, total = 329.336 us
+Event stats:
+	PeriodicalRunner.RunFnPeriodically - 6 total (2 active, 1 running), CPU time: mean = 20.394 us, total = 122.364 us
+	UNKNOWN - 2 total (2 active), CPU time: mean = 0.000 s, total = 0.000 s
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	GcsClient.deadline_timer.check_gcs_connection - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	CoreWorker.deadline_timer.flush_profiling_events - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 15.639 us, total = 15.639 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 1 total (0 active), CPU time: mean = 191.333 us, total = 191.333 us
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+
+
+[2022-06-16 21:39:29,323 I 114904 115974] accessor.cc:599: Received notification for node id = 5362b08c08075f2f5bd7b1d3e1df0d75415293f6ede64c2d4cee5e5c, IsAlive = 1
+[2022-06-16 21:40:30,106 I 114904 115974] core_worker.cc:494: Event stats:
+
+
+Global stats: 821 total (8 active)
+Queueing time: mean = 21.704 ms, max = 2.636 s, min = -0.044 s, total = 17.819 s
+Execution time:  mean = 6.442 ms, total = 5.289 s
+Event stats:
+	UNKNOWN - 601 total (4 active, 1 running), CPU time: mean = 6.724 ms, total = 4.041 s
+	GcsClient.deadline_timer.check_gcs_connection - 56 total (1 active), CPU time: mean = 1.097 ms, total = 61.416 ms
+	CoreWorker.deadline_timer.flush_profiling_events - 56 total (1 active), CPU time: mean = 3.099 ms, total = 173.562 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 56 total (1 active), CPU time: mean = 6.292 us, total = 352.369 us
+	CoreWorkerService.grpc_server.GetCoreWorkerStats - 42 total (0 active), CPU time: mean = 23.634 ms, total = 992.638 ms
+	PeriodicalRunner.RunFnPeriodically - 6 total (0 active), CPU time: mean = 3.324 ms, total = 19.946 ms
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 26.803 us, total = 26.803 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 15.639 us, total = 15.639 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 1 total (0 active), CPU time: mean = 191.333 us, total = 191.333 us
+
+
+[2022-06-16 21:40:41,832 I 114904 114904] direct_actor_task_submitter.cc:33: Set max pending calls to -1 for actor 03c6e83371497c3b68820b0305000000
+[2022-06-16 21:40:42,057 I 114904 114904] direct_actor_task_submitter.cc:33: Set max pending calls to -1 for actor 2edcdc3514cc79867a2803f305000000
+[2022-06-16 21:40:42,829 I 114904 114904] direct_actor_task_submitter.cc:33: Set max pending calls to -1 for actor 995f5ab0df6de8baa8e7136405000000
+[2022-06-16 21:40:42,830 I 114904 114904] direct_actor_task_submitter.cc:33: Set max pending calls to -1 for actor 4db741e2d4dd9b023cfbf98005000000
+[2022-06-16 21:40:42,830 I 114904 114904] direct_actor_task_submitter.cc:33: Set max pending calls to -1 for actor 4a24731d766c451099e6b67c05000000
+[2022-06-16 21:40:43,506 I 114904 115974] actor_manager.cc:246: received notification on actor, state: DEPENDENCIES_UNREADY, actor_id: 995f5ab0df6de8baa8e7136405000000, ip address: , port: 0, worker_id: NIL_ID, raylet_id: NIL_ID, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:40:43,543 I 114904 115974] actor_manager.cc:246: received notification on actor, state: DEPENDENCIES_UNREADY, actor_id: 4db741e2d4dd9b023cfbf98005000000, ip address: , port: 0, worker_id: NIL_ID, raylet_id: NIL_ID, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:40:43,543 I 114904 115974] actor_manager.cc:246: received notification on actor, state: DEPENDENCIES_UNREADY, actor_id: 4a24731d766c451099e6b67c05000000, ip address: , port: 0, worker_id: NIL_ID, raylet_id: NIL_ID, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:40:43,680 I 114904 115974] actor_manager.cc:246: received notification on actor, state: DEPENDENCIES_UNREADY, actor_id: 03c6e83371497c3b68820b0305000000, ip address: , port: 0, worker_id: NIL_ID, raylet_id: NIL_ID, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:40:43,751 I 114904 115974] actor_manager.cc:246: received notification on actor, state: DEPENDENCIES_UNREADY, actor_id: 2edcdc3514cc79867a2803f305000000, ip address: , port: 0, worker_id: NIL_ID, raylet_id: NIL_ID, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:40:43,751 I 114904 115974] actor_manager.cc:246: received notification on actor, state: DEPENDENCIES_UNREADY, actor_id: 995f5ab0df6de8baa8e7136405000000, ip address: , port: 0, worker_id: NIL_ID, raylet_id: NIL_ID, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:40:43,751 I 114904 115974] actor_manager.cc:246: received notification on actor, state: DEPENDENCIES_UNREADY, actor_id: 4db741e2d4dd9b023cfbf98005000000, ip address: , port: 0, worker_id: NIL_ID, raylet_id: NIL_ID, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:40:43,751 I 114904 115974] actor_manager.cc:246: received notification on actor, state: DEPENDENCIES_UNREADY, actor_id: 4a24731d766c451099e6b67c05000000, ip address: , port: 0, worker_id: NIL_ID, raylet_id: NIL_ID, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:40:43,751 I 114904 115974] actor_manager.cc:246: received notification on actor, state: PENDING_CREATION, actor_id: 03c6e83371497c3b68820b0305000000, ip address: , port: 0, worker_id: NIL_ID, raylet_id: NIL_ID, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:40:43,751 I 114904 115974] actor_manager.cc:246: received notification on actor, state: PENDING_CREATION, actor_id: 2edcdc3514cc79867a2803f305000000, ip address: , port: 0, worker_id: NIL_ID, raylet_id: NIL_ID, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:40:43,751 I 114904 115974] actor_manager.cc:246: received notification on actor, state: PENDING_CREATION, actor_id: 995f5ab0df6de8baa8e7136405000000, ip address: , port: 0, worker_id: NIL_ID, raylet_id: NIL_ID, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:40:43,751 I 114904 115974] actor_manager.cc:246: received notification on actor, state: PENDING_CREATION, actor_id: 4db741e2d4dd9b023cfbf98005000000, ip address: , port: 0, worker_id: NIL_ID, raylet_id: NIL_ID, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:40:43,751 I 114904 115974] actor_manager.cc:246: received notification on actor, state: PENDING_CREATION, actor_id: 4a24731d766c451099e6b67c05000000, ip address: , port: 0, worker_id: NIL_ID, raylet_id: NIL_ID, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:41:31,634 I 114904 115974] core_worker.cc:494: Event stats:
+
+
+Global stats: 1691 total (12 active)
+Queueing time: mean = 27.618 ms, max = 3.571 s, min = -0.044 s, total = 46.702 s
+Execution time:  mean = 8.255 ms, total = 13.959 s
+Event stats:
+	UNKNOWN - 1191 total (4 active, 1 running), CPU time: mean = 7.306 ms, total = 8.702 s
+	GcsClient.deadline_timer.check_gcs_connection - 113 total (1 active), CPU time: mean = 767.333 us, total = 86.709 ms
+	CoreWorker.deadline_timer.flush_profiling_events - 113 total (1 active), CPU time: mean = 1.897 ms, total = 214.306 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 112 total (0 active), CPU time: mean = 6.547 us, total = 733.296 us
+	CoreWorkerService.grpc_server.GetCoreWorkerStats - 89 total (0 active), CPU time: mean = 33.832 ms, total = 3.011 s
+	Subscriber.HandlePublishedMessage_GCS_ACTOR_CHANNEL - 10 total (0 active), CPU time: mean = 6.760 us, total = 67.600 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 6 total (0 active), CPU time: mean = 116.240 ms, total = 697.442 ms
+	PeriodicalRunner.RunFnPeriodically - 6 total (0 active), CPU time: mean = 3.324 ms, total = 19.946 ms
+	CoreWorkerDirectActorTaskSubmitter::SubmitTask - 5 total (0 active), CPU time: mean = 6.065 ms, total = 30.323 ms
+	CoreWorkerService.grpc_server.WaitForActorOutOfScope - 5 total (0 active), CPU time: mean = 9.788 ms, total = 48.939 ms
+	ActorInfoGcsService.grpc_client.RegisterActor - 5 total (0 active), CPU time: mean = 17.155 ms, total = 85.776 ms
+	ActorInfoGcsService.grpc_client.GetActorInfo - 5 total (0 active), CPU time: mean = 30.930 ms, total = 154.652 ms
+	NodeManagerService.grpc_client.PinObjectIDs - 5 total (0 active), CPU time: mean = 2.126 ms, total = 10.631 ms
+	ActorInfoGcsService.grpc_client.CreateActor - 5 total (5 active), CPU time: mean = 0.000 s, total = 0.000 s
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 5 total (1 active), CPU time: mean = 10.298 ms, total = 51.491 ms
+	ActorCreator.AsyncRegisterActor - 5 total (0 active), CPU time: mean = 36.133 ms, total = 180.667 ms
+	StatsGcsService.grpc_client.AddProfileData - 3 total (0 active), CPU time: mean = 10.416 us, total = 31.248 us
+	CoreWorkerService.grpc_server.PubsubCommandBatch - 2 total (0 active), CPU time: mean = 7.341 ms, total = 14.683 ms
+	CoreWorkerService.grpc_server.UpdateObjectLocationBatch - 2 total (0 active), CPU time: mean = 45.533 ms, total = 91.065 ms
+	CoreWorkerService.grpc_server.PubsubLongPolling - 1 total (0 active), CPU time: mean = 4.413 us, total = 4.413 us
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 15.639 us, total = 15.639 us
+	CoreWorkerService.grpc_server.LocalGC - 1 total (0 active), CPU time: mean = 558.984 ms, total = 558.984 ms
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 26.803 us, total = 26.803 us
+
+
+[2022-06-16 21:42:23,797 I 114904 115974] actor_manager.cc:246: received notification on actor, state: ALIVE, actor_id: 2edcdc3514cc79867a2803f305000000, ip address: 10.140.1.24, port: 10022, worker_id: cdaebc24b63ccb663745ec33da8354b22548069396f49e5ea8b6aa79, raylet_id: 5362b08c08075f2f5bd7b1d3e1df0d75415293f6ede64c2d4cee5e5c, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:42:23,934 I 114904 115974] direct_actor_task_submitter.cc:217: Connecting to actor 2edcdc3514cc79867a2803f305000000 at worker cdaebc24b63ccb663745ec33da8354b22548069396f49e5ea8b6aa79
+[2022-06-16 21:42:24,080 I 114904 115974] actor_manager.cc:246: received notification on actor, state: ALIVE, actor_id: 03c6e83371497c3b68820b0305000000, ip address: 10.140.1.24, port: 10018, worker_id: d632b3aa7a13c6a564888eebdc257dd385ce26511c8279a20011ca94, raylet_id: 5362b08c08075f2f5bd7b1d3e1df0d75415293f6ede64c2d4cee5e5c, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:42:24,080 I 114904 115974] direct_actor_task_submitter.cc:217: Connecting to actor 03c6e83371497c3b68820b0305000000 at worker d632b3aa7a13c6a564888eebdc257dd385ce26511c8279a20011ca94
+[2022-06-16 21:42:24,080 I 114904 115974] actor_manager.cc:246: received notification on actor, state: ALIVE, actor_id: 995f5ab0df6de8baa8e7136405000000, ip address: 10.140.1.24, port: 10020, worker_id: a056699f475a688014c89358a05f9b709c9b434bf653f5d802b77cab, raylet_id: 5362b08c08075f2f5bd7b1d3e1df0d75415293f6ede64c2d4cee5e5c, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:42:24,080 I 114904 115974] direct_actor_task_submitter.cc:217: Connecting to actor 995f5ab0df6de8baa8e7136405000000 at worker a056699f475a688014c89358a05f9b709c9b434bf653f5d802b77cab
+[2022-06-16 21:42:24,081 I 114904 115974] actor_manager.cc:246: received notification on actor, state: ALIVE, actor_id: 4a24731d766c451099e6b67c05000000, ip address: 10.140.1.24, port: 10019, worker_id: 021d01b4ddba425dc7e62398322cdee5efc6bf17d012bdce0e6c42bc, raylet_id: 5362b08c08075f2f5bd7b1d3e1df0d75415293f6ede64c2d4cee5e5c, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:42:24,081 I 114904 115974] direct_actor_task_submitter.cc:217: Connecting to actor 4a24731d766c451099e6b67c05000000 at worker 021d01b4ddba425dc7e62398322cdee5efc6bf17d012bdce0e6c42bc
+[2022-06-16 21:42:24,081 I 114904 115974] actor_manager.cc:246: received notification on actor, state: ALIVE, actor_id: 4db741e2d4dd9b023cfbf98005000000, ip address: 10.140.1.24, port: 10021, worker_id: 7069fa02538d3d1380146314ad63a3c2621bbca7fbe9cca4f0b2e307, raylet_id: 5362b08c08075f2f5bd7b1d3e1df0d75415293f6ede64c2d4cee5e5c, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2022-06-16 21:42:24,081 I 114904 115974] direct_actor_task_submitter.cc:217: Connecting to actor 4db741e2d4dd9b023cfbf98005000000 at worker 7069fa02538d3d1380146314ad63a3c2621bbca7fbe9cca4f0b2e307
+[2022-06-16 21:42:32,011 I 114904 115974] core_worker.cc:494: Event stats:
+
+
+Global stats: 2531 total (11 active)
+Queueing time: mean = 26.555 ms, max = 3.571 s, min = -0.044 s, total = 67.212 s
+Execution time:  mean = 7.886 ms, total = 19.958 s
+Event stats:
+	UNKNOWN - 1796 total (4 active, 1 running), CPU time: mean = 7.104 ms, total = 12.759 s
+	GcsClient.deadline_timer.check_gcs_connection - 169 total (1 active), CPU time: mean = 514.171 us, total = 86.895 ms
+	CoreWorker.deadline_timer.flush_profiling_events - 169 total (1 active), CPU time: mean = 1.269 ms, total = 214.511 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 168 total (0 active), CPU time: mean = 6.894 us, total = 1.158 ms
+	CoreWorkerService.grpc_server.GetCoreWorkerStats - 134 total (0 active), CPU time: mean = 29.530 ms, total = 3.957 s
+	Subscriber.HandlePublishedMessage_GCS_ACTOR_CHANNEL - 15 total (0 active), CPU time: mean = 19.278 ms, total = 289.176 ms
+	CoreWorkerService.grpc_server.PubsubCommandBatch - 7 total (0 active), CPU time: mean = 9.273 ms, total = 64.908 ms
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 7 total (1 active), CPU time: mean = 41.796 ms, total = 292.571 ms
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 6 total (0 active), CPU time: mean = 116.240 ms, total = 697.442 ms
+	PeriodicalRunner.RunFnPeriodically - 6 total (0 active), CPU time: mean = 3.324 ms, total = 19.946 ms
+	CoreWorkerDirectActorTaskSubmitter::SubmitTask - 5 total (0 active), CPU time: mean = 6.065 ms, total = 30.323 ms
+	CoreWorkerService.grpc_server.WaitForActorOutOfScope - 5 total (0 active), CPU time: mean = 9.788 ms, total = 48.939 ms
+	ActorInfoGcsService.grpc_client.RegisterActor - 5 total (0 active), CPU time: mean = 17.155 ms, total = 85.776 ms
+	ActorInfoGcsService.grpc_client.GetActorInfo - 5 total (0 active), CPU time: mean = 30.930 ms, total = 154.652 ms
+	NodeManagerService.grpc_client.PinObjectIDs - 5 total (0 active), CPU time: mean = 2.126 ms, total = 10.631 ms
+	ActorInfoGcsService.grpc_client.CreateActor - 5 total (0 active), CPU time: mean = 50.950 ms, total = 254.752 ms
+	CoreWorkerService.grpc_client.PushTask - 5 total (4 active), CPU time: mean = 14.603 ms, total = 73.017 ms
+	ActorCreator.AsyncRegisterActor - 5 total (0 active), CPU time: mean = 36.133 ms, total = 180.667 ms
+	CoreWorkerService.grpc_server.PubsubLongPolling - 5 total (0 active), CPU time: mean = 3.021 ms, total = 15.105 ms
+	StatsGcsService.grpc_client.AddProfileData - 3 total (0 active), CPU time: mean = 10.416 us, total = 31.248 us
+	CoreWorkerService.grpc_server.UpdateObjectLocationBatch - 3 total (0 active), CPU time: mean = 54.179 ms, total = 162.536 ms
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 15.639 us, total = 15.639 us
+	CoreWorkerService.grpc_server.LocalGC - 1 total (0 active), CPU time: mean = 558.984 ms, total = 558.984 ms
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 26.803 us, total = 26.803 us
+
+
+[2022-06-16 21:42:33,010 I 114904 114904] core_worker.cc:591: Disconnecting to the raylet.
+[2022-06-16 21:42:33,010 I 114904 114904] raylet_client.cc:162: RayletClient::Disconnect, exit_type=INTENDED_EXIT, has creation_task_exception_pb_bytes=0
+[2022-06-16 21:42:33,010 I 114904 114904] core_worker.cc:539: Shutting down a core worker.
+[2022-06-16 21:42:33,015 I 114904 114904] core_worker.cc:563: Disconnecting a GCS client.
+[2022-06-16 21:42:33,015 I 114904 114904] core_worker.cc:567: Waiting for joining a core worker io thread. If it hangs here, there might be deadlock or a high load in the core worker io service.
+[2022-06-16 21:42:33,015 I 114904 115974] core_worker.cc:679: Core worker main io service stopped.
+[2022-06-16 21:42:33,015 I 114904 114904] core_worker.cc:576: Core worker ready to be deallocated.
+[2022-06-16 21:42:33,025 I 114904 114904] core_worker_process.cc:298: Removed worker 05000000ffffffffffffffffffffffffffffffffffffffffffffffff
+[2022-06-16 21:42:33,045 I 114904 114904] core_worker.cc:530: Core worker is destructed
+[2022-06-16 21:42:33,378 I 114904 114904] core_worker_process.cc:154: Destructing CoreWorkerProcessImpl. pid: 114904
+[2022-06-16 21:42:33,378 I 114904 114904] io_service_pool.cc:47: IOServicePool is stopped.

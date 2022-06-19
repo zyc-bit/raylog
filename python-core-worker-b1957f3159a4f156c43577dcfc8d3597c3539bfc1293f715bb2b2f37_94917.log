@@ -1,0 +1,98 @@
+[2022-06-16 21:16:34,649 I 94917 94917] core_worker_process.cc:120: Constructing CoreWorkerProcess. pid: 94917
+[2022-06-16 21:16:35,015 I 94917 94917] grpc_server.cc:105: worker server started, listening on port 10009.
+[2022-06-16 21:16:35,018 I 94917 94917] core_worker.cc:175: Initializing worker at address: 10.140.1.24:10009, worker ID b1957f3159a4f156c43577dcfc8d3597c3539bfc1293f715bb2b2f37, raylet 5362b08c08075f2f5bd7b1d3e1df0d75415293f6ede64c2d4cee5e5c
+[2022-06-16 21:16:35,018 I 94917 95471] gcs_server_address_updater.cc:32: GCS Server updater thread id: 140656302573312
+[2022-06-16 21:16:35,264 I 94917 94917] io_service_pool.cc:35: IOServicePool is running with 1 io_service.
+[2022-06-16 21:16:35,270 I 94917 95481] core_worker.cc:494: Event stats:
+
+
+Global stats: 17 total (11 active)
+Queueing time: mean = 38.946 ms, max = 146.093 ms, min = 371.090 us, total = 662.078 ms
+Execution time:  mean = 23.887 us, total = 406.081 us
+Event stats:
+	PeriodicalRunner.RunFnPeriodically - 7 total (2 active, 1 running), CPU time: mean = 24.866 us, total = 174.065 us
+	UNKNOWN - 3 total (3 active), CPU time: mean = 0.000 s, total = 0.000 s
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 1 total (0 active), CPU time: mean = 232.016 us, total = 232.016 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	GcsClient.deadline_timer.check_gcs_connection - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	CoreWorker.deadline_timer.flush_profiling_events - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+
+
+[2022-06-16 21:16:35,288 I 94917 95481] accessor.cc:599: Received notification for node id = 5362b08c08075f2f5bd7b1d3e1df0d75415293f6ede64c2d4cee5e5c, IsAlive = 1
+[2022-06-16 21:16:35,790 I 94917 94917] direct_actor_task_submitter.cc:33: Set max pending calls to -1 for actor 2e836c04f255ade01ddcce0e02000000
+[2022-06-16 21:16:35,790 I 94917 94917] direct_actor_task_submitter.cc:217: Connecting to actor 2e836c04f255ade01ddcce0e02000000 at worker b1957f3159a4f156c43577dcfc8d3597c3539bfc1293f715bb2b2f37
+[2022-06-16 21:16:35,790 I 94917 94917] core_worker.cc:2317: Creating actor: 2e836c04f255ade01ddcce0e02000000
+[2022-06-16 21:17:35,270 I 94917 95481] core_worker.cc:494: Event stats:
+
+
+Global stats: 867 total (8 active)
+Queueing time: mean = 27.734 ms, max = 3.708 s, min = -0.058 s, total = 24.046 s
+Execution time:  mean = 7.007 ms, total = 6.075 s
+Event stats:
+	UNKNOWN - 647 total (5 active, 1 running), CPU time: mean = 7.439 ms, total = 4.813 s
+	GcsClient.deadline_timer.check_gcs_connection - 55 total (1 active), CPU time: mean = 1.297 ms, total = 71.356 ms
+	CoreWorker.deadline_timer.flush_profiling_events - 55 total (1 active), CPU time: mean = 3.960 ms, total = 217.794 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 54 total (0 active), CPU time: mean = 5.413 us, total = 292.281 us
+	CoreWorkerService.grpc_server.GetCoreWorkerStats - 44 total (0 active), CPU time: mean = 21.956 ms, total = 966.080 ms
+	PeriodicalRunner.RunFnPeriodically - 7 total (0 active), CPU time: mean = 814.988 us, total = 5.705 ms
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 1 total (0 active), CPU time: mean = 232.016 us, total = 232.016 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 18.168 us, total = 18.168 us
+	CoreWorkerService.grpc_server.PushTask - 1 total (0 active), CPU time: mean = 111.748 us, total = 111.748 us
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 44.766 us, total = 44.766 us
+
+
+[2022-06-16 21:17:45,830 I 94917 94917] direct_actor_transport.cc:144: Actor creation task finished, task_id: ffffffffffffffff2e836c04f255ade01ddcce0e02000000, actor_id: 2e836c04f255ade01ddcce0e02000000
+[2022-06-16 21:18:35,271 I 94917 95481] core_worker.cc:494: Event stats:
+
+
+Global stats: 1817 total (8 active)
+Queueing time: mean = 15.325 ms, max = 3.708 s, min = -0.075 s, total = 27.846 s
+Execution time:  mean = 4.416 ms, total = 8.023 s
+Event stats:
+	UNKNOWN - 1349 total (5 active, 1 running), CPU time: mean = 3.951 ms, total = 5.330 s
+	GcsClient.deadline_timer.check_gcs_connection - 115 total (1 active), CPU time: mean = 622.007 us, total = 71.531 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 114 total (0 active), CPU time: mean = 226.212 us, total = 25.788 ms
+	CoreWorker.deadline_timer.flush_profiling_events - 114 total (1 active), CPU time: mean = 9.635 ms, total = 1.098 s
+	CoreWorkerService.grpc_server.GetCoreWorkerStats - 93 total (0 active), CPU time: mean = 15.694 ms, total = 1.460 s
+	CoreWorkerService.grpc_server.PushTask - 15 total (0 active), CPU time: mean = 1.436 ms, total = 21.547 ms
+	PeriodicalRunner.RunFnPeriodically - 7 total (0 active), CPU time: mean = 814.988 us, total = 5.705 ms
+	StatsGcsService.grpc_client.AddProfileData - 5 total (0 active), CPU time: mean = 2.111 ms, total = 10.553 ms
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 1 total (0 active), CPU time: mean = 232.016 us, total = 232.016 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 18.168 us, total = 18.168 us
+	CoreWorkerService.grpc_server.DirectActorCallArgWaitComplete - 1 total (0 active), CPU time: mean = 61.649 us, total = 61.649 us
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 44.766 us, total = 44.766 us
+
+
+[2022-06-16 21:18:57,992 W 94917 95481] profiling.cc:75: The GCS is backlogged processing profiling data. Some events may be dropped.
+[2022-06-16 21:18:58,993 W 94917 95481] profiling.cc:75: The GCS is backlogged processing profiling data. Some events may be dropped.
+[2022-06-16 21:19:35,271 I 94917 95481] core_worker.cc:494: Event stats:
+
+
+Global stats: 3109 total (8 active)
+Queueing time: mean = 10.828 ms, max = 3.708 s, min = -0.075 s, total = 33.664 s
+Execution time:  mean = 3.379 ms, total = 10.505 s
+Event stats:
+	UNKNOWN - 2044 total (5 active, 1 running), CPU time: mean = 3.307 ms, total = 6.759 s
+	CoreWorkerService.grpc_server.PushTask - 377 total (0 active), CPU time: mean = 301.803 us, total = 113.780 ms
+	GcsClient.deadline_timer.check_gcs_connection - 174 total (1 active), CPU time: mean = 700.739 us, total = 121.929 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 173 total (0 active), CPU time: mean = 151.102 us, total = 26.141 ms
+	CoreWorker.deadline_timer.flush_profiling_events - 173 total (1 active), CPU time: mean = 8.195 ms, total = 1.418 s
+	CoreWorkerService.grpc_server.GetCoreWorkerStats - 143 total (0 active), CPU time: mean = 14.331 ms, total = 2.049 s
+	StatsGcsService.grpc_client.AddProfileData - 10 total (0 active), CPU time: mean = 1.079 ms, total = 10.788 ms
+	PeriodicalRunner.RunFnPeriodically - 7 total (0 active), CPU time: mean = 814.988 us, total = 5.705 ms
+	NodeManagerService.grpc_client.PinObjectIDs - 3 total (0 active), CPU time: mean = 18.232 us, total = 54.695 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 1 total (0 active), CPU time: mean = 232.016 us, total = 232.016 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 18.168 us, total = 18.168 us
+	CoreWorkerService.grpc_server.DirectActorCallArgWaitComplete - 1 total (0 active), CPU time: mean = 61.649 us, total = 61.649 us
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 44.766 us, total = 44.766 us
+
+
+[2022-06-16 21:20:32,028 I 94917 95481] core_worker.cc:3086: Force kill actor request has received. exiting immediately...
+[2022-06-16 21:20:32,028 I 94917 95481] core_worker.cc:591: Disconnecting to the raylet.
+[2022-06-16 21:20:32,028 I 94917 95481] raylet_client.cc:162: RayletClient::Disconnect, exit_type=INTENDED_EXIT, has creation_task_exception_pb_bytes=0
